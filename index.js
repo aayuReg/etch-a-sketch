@@ -13,7 +13,13 @@ let allDivs=[];
 
 
 container.addEventListener('mouseover',(e)=>{
-    console.log('hoveringg')
-    allDivs.forEach((div)=>div.classList.toggle('hover'))
+    allDivs.forEach((div)=>div.classList.add('hover'))
+    console.log('hoveringg in')
+    
    
+})
+
+container.addEventListener('mouseout',()=>{
+    allDivs.forEach((div)=>div.classList.remove('hover'))
+    console.log('hovering out')
 })
