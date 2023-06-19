@@ -3,10 +3,11 @@
   margin: 0;
   border: 0;
 }
-body {
+body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap:15px
 }
 h1 {
   padding: 20px;
@@ -16,29 +17,22 @@ h1 {
 
 /* class selectors */
 
-
 .container {
-  width: 420px;
+  width: 500px;
+  border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  
+  justify-content: center;
+  /* gap:2px */
 }
 
 .grid {
-  height: 25px;
-  width: 25px;
-  border: 1px solid white;
-  background-color: gray;
-  display: flex;
-  /* flex-shrink: 1; */
-  /* transition: opacity 0.3s ease; */
-
+  border: 1px solid gray;
+  flex-basis: calc(100% / var(--userInput)); /* Set the flex-basis property dynamically based on user input */
+  height: 0; /* Set initial height to 0 */
+  padding-bottom: calc(100% / var(--userInput)); /* Maintain aspect ratio */
 }
-
-
-.grid:hover{
-    /* opacity: 1; */
-    background-color: white;
+.hover {
+  background-color: black;
 }
