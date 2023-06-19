@@ -1,4 +1,9 @@
 const container = document.querySelector(".container");
+const userInputBtn=document.querySelector('.userInputBtn');
+let userInput=0;
+
+
+
 let allDivs=[];
     for (let i=0;i<16;i++){
         for(let j=0;j<16;j++){
@@ -10,16 +15,20 @@ let allDivs=[];
     }
 
 
+userInputBtn.addEventListener('click',()=>{
+    let userInput=prompt('enter the number of grids you want')
+   
+    
+})
 
-
-container.addEventListener('mouseover',(e)=>{
-    allDivs.forEach((div)=>div.classList.add('hover'))
-    console.log('hoveringg in')
+// container.addEventListener('mouseover',(e)=>{
+//     allDivs.forEach((div)=>div.classList.add('hover'))
+//     console.log('hoveringg in')
     
    
-})
+// })
 
-container.addEventListener('mouseout',()=>{
-    allDivs.forEach((div)=>div.classList.remove('hover'))
-    console.log('hovering out')
-})
+// container.addEventListener('mouseout',()=>{
+//     allDivs.forEach((div)=>div.classList.remove('hover'))
+//     console.log('hovering out')
+// })

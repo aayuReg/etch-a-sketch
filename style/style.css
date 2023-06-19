@@ -16,11 +16,14 @@ h1 {
 
 /* class selectors */
 
+
 .container {
   width: 420px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  
 }
 
 .grid {
@@ -28,15 +31,14 @@ h1 {
   width: 25px;
   border: 1px solid white;
   background-color: gray;
-  transition: opacity 0.3s ease;
+  display: flex;
+  flex-shrink: 1;
+  /* transition: opacity 0.3s ease; */
 
 }
 
-.hover {
-  
-  background-color: aliceblue;
-  opacity: 0.5;
-}
+
 .grid:hover{
-    opacity: 1;
+    /* opacity: 1; */
+    background-color: white;
 }
