@@ -32,7 +32,7 @@ h1 {
   border: 1px solid white;
   background-color: gray;
   display: flex;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
   /* transition: opacity 0.3s ease; */
 
 }

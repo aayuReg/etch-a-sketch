@@ -21,14 +21,11 @@ userInputBtn.addEventListener('click',()=>{
     
 })
 
-// container.addEventListener('mouseover',(e)=>{
-//     allDivs.forEach((div)=>div.classList.add('hover'))
-//     console.log('hoveringg in')
-    
-   
-// })
-
-// container.addEventListener('mouseout',()=>{
-//     allDivs.forEach((div)=>div.classList.remove('hover'))
-//     console.log('hovering out')
-// })
+allDivs.forEach(div=>{
+    div.addEventListener('mouseover',()=>{
+        div.classList.add('hover')
+    })
+    // div.addEventListener('mouseout',()=>{
+    //     div.classList.remove('hover')
+    // })
+})
